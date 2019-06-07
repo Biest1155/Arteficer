@@ -44,7 +44,7 @@ namespace Arteficer
         protected override void OnStart()
         {
             base.OnStart();
-
+            listview.Adapter = new ArtefactAdapter(this, repository.Artefacts);
         }
 
 
