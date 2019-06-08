@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Widget;
 using Arteficer.Models;
 using Android.Content;
+using System.Linq;
 
 namespace Arteficer
 {
@@ -52,7 +53,7 @@ namespace Arteficer
         {
             Intent intent = new Intent(this, typeof(DetailsActivity));
             string artefactName = ((TextView)e.View).Text;
-            int artefactId = repository.Artefacts.;
+            int artefactId = repository.Artefacts.FirstOrDefault(c => c.Name == artefactName).Id;
             intent.PutExtra("artefactId", artefactId);
             StartActivity(intent);
 

@@ -34,7 +34,7 @@
 		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:layout_width="match_parent"
 		android:layout_height="391.5dp"
-		android:id="@+id/textView1" />
+		android:id="@+id/details_detailsText" />
 	<LinearLayout
 		android:orientation="horizontal"
 		android:minWidth="25px"

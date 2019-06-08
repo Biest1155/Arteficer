@@ -2519,6 +2519,9 @@ namespace Arteficer
 			// aapt resource value: 0x7f0800ba
 			public const int design_navigation_view = 2131230906;
 			
+			// aapt resource value: 0x7f0800c3
+			public const int details_detailsText = 2131230915;
+			
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
 			
@@ -2893,9 +2896,6 @@ namespace Arteficer
 			
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
-			
-			// aapt resource value: 0x7f0800c3
-			public const int textView1 = 2131230915;
 			
 			// aapt resource value: 0x7f0800be
 			public const int text_input_password_toggle = 2131230910;
