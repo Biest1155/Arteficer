@@ -12,6 +12,7 @@ namespace Arteficer
     public class MainActivity : AppCompatActivity
     {
         Repository repository = Repository.GetInstance();
+        Artefact artefact;
         ListView listview;
         EditText name;
         EditText type;
@@ -50,6 +51,9 @@ namespace Arteficer
         private void OpenArtefactDetailsClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             Intent intent = new Intent(this, typeof(DetailsActivity));
+            string artefactName = ((TextView)e.View).Text;
+            int artefactId = repository.Artefacts.;
+            intent.PutExtra("artefactId", artefactId);
             StartActivity(intent);
 
         }

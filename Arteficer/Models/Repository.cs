@@ -15,7 +15,7 @@ using Environment = System.Environment;
 
 namespace Arteficer.Models
 {
-    class Repository
+    public class Repository
     {
         public List<Artefact> Artefacts { get; set; } = new List<Artefact>();
         string filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Artefact.dat");

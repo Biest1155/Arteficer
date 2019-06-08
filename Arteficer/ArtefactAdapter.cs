@@ -45,9 +45,9 @@ namespace Arteficer
             View view = convertView;
             if (view == null) // no view to re-use, create new
                 view = activity.LayoutInflater.Inflate(Resource.Layout.artefact_list_layout, null);
-            item.Name = view.FindViewById<TextView>(Resource.Id.artefact_name_list).Text;
-            item.Type = view.FindViewById<TextView>(Resource.Id.type_list).Text;
-            item.Element = view.FindViewById<TextView>(Resource.Id.element_list).Text;
+            view.FindViewById<TextView>(Resource.Id.artefact_name_list).Text = item.Name;
+            view.FindViewById<TextView>(Resource.Id.type_list).Text = item.Type;
+            view.FindViewById<TextView>(Resource.Id.element_list).Text = item.Element;
             return view;
         }
     }
