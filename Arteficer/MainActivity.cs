@@ -23,9 +23,7 @@ namespace Arteficer
             SetContentView(Resource.Layout.activity_main);                  // Set our view from the "main" layout resource
 
             Button search = FindViewById<Button>(Resource.Id.searchButton);
-
             Button random = FindViewById<Button>(Resource.Id.randomButton);
-
             Button create = FindViewById<Button>(Resource.Id.createButton); // Make connection to button
             create.Click += delegate {                                       // Make desired effect when clicked
                 Intent intent = new Intent(this, typeof(CreateActivity));
@@ -34,6 +32,7 @@ namespace Arteficer
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
             listview.Adapter = new ArtefactAdapter(this, repository.Artefacts);
+            listview.ItemClick += OpenArtefactDetailsClick;
 
             name = FindViewById<EditText>(Resource.Id.nameEdit);
             type = FindViewById<EditText>(Resource.Id.typeEdit);
@@ -43,10 +42,16 @@ namespace Arteficer
 
         protected override void OnStart()
         {
-            base.OnStart();
+            listview = FindViewById<ListView>(Resource.Id.listView1);
             listview.Adapter = new ArtefactAdapter(this, repository.Artefacts);
+            base.OnStart();
         }
 
+        private void OpenArtefactDetailsClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(DetailsActivity));
+            StartActivity(intent);
 
+        }
     }
 }

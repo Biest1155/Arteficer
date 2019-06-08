@@ -19,7 +19,7 @@
             android:id="@+id/linearLayoutList">
             <TextView
                 android:id="@+id/artefact_name_list"
-                android:text="artefact"
+                android:text="Artefact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dip"/>

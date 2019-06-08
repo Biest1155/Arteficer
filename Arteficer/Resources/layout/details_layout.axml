@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:text="Name"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/name_detailsText" />
+	<TextView
+		android:text="Type"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/type_detailsText" />
+	<TextView
+		android:text="Element"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/element_detailsText" />
+	<CheckBox
+		android:text="Setpiece"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/setpiece_detailsCheck" />
+	<TextView
+		android:text="Details"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_height="391.5dp"
+		android:id="@+id/textView1" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1" >
+		<Button
+			android:text="Delete"
+			android:layout_width="184.5dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/delete_buttonDetails" />
+		<Button
+			android:text="Edit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/edit_buttonDetails" />
+	</LinearLayout>
+
+</LinearLayout>

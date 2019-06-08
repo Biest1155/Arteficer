@@ -11,13 +11,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Newtonsoft.Json;
+using Environment = System.Environment;
 
 namespace Arteficer.Models
 {
     class Repository
     {
         public List<Artefact> Artefacts { get; set; } = new List<Artefact>();
-        string filename = "Artefact.dat";
+        string filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Artefact.dat");
 
         private static Repository instance;
         public static Repository GetInstance()
@@ -31,7 +32,7 @@ namespace Arteficer.Models
 
         private Repository()
         {
-
+            read();
         }
 
         public void save()

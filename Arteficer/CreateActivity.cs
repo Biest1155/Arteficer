@@ -49,6 +49,7 @@ namespace Arteficer
             artefact.Description = description.Text;
             repository.Artefacts.Add(artefact);
             repository.save();
+            OnBackPressed();
         }
     }
 }

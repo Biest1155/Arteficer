@@ -36,7 +36,7 @@ namespace Arteficer
 
         public override long GetItemId(int position)
         {
-            return position;
+            return artefacts[position].Id;
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
@@ -45,13 +45,9 @@ namespace Arteficer
             View view = convertView;
             if (view == null) // no view to re-use, create new
                 view = activity.LayoutInflater.Inflate(Resource.Layout.artefact_list_layout, null);
-            view.FindViewById<TextView>(Resource.Id.artefact_name_list).Text = item.Name.ToString();
-            view.FindViewById<TextView>(Resource.Id.type_list).Text = item.Type;
-            view.FindViewById<TextView>(Resource.Id.element_list).Text = item.Element;
-
-            view.FindViewById<TextView>(Resource.Id.artefact_name_list).SetTextColor(Android.Graphics.Color.Black);
-            view.FindViewById<TextView>(Resource.Id.type_list).SetTextColor(Android.Graphics.Color.Black);
-            view.FindViewById<TextView>(Resource.Id.element_list).SetTextColor(Android.Graphics.Color.Black);
+            item.Name = view.FindViewById<TextView>(Resource.Id.artefact_name_list).Text;
+            item.Type = view.FindViewById<TextView>(Resource.Id.type_list).Text;
+            item.Element = view.FindViewById<TextView>(Resource.Id.element_list).Text;
             return view;
         }
     }
