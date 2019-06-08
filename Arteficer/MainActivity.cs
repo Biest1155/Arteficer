@@ -13,7 +13,6 @@ namespace Arteficer
     public class MainActivity : AppCompatActivity
     {
         Repository repository = Repository.GetInstance();
-        Artefact artefact;
         ListView listview;
         EditText name;
         EditText type;

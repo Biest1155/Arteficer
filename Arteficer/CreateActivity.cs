@@ -27,7 +27,6 @@ namespace Arteficer
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.create_layout);
-
             Button back = FindViewById<Button>(Resource.Id.backButton);
             back.Click += delegate {
                 OnBackPressed();

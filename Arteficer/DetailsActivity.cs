@@ -26,6 +26,10 @@ namespace Arteficer
             artefact = repository.Artefacts.FirstOrDefault(e => e.Id == Intent.Extras.GetInt("artefactId"));
 
             view.FindViewById<TextView>(Resource.Id.name_detailsText).Text = artefact.Name;
+            view.FindViewById<TextView>(Resource.Id.type_detailsText).Text = artefact.Type;
+            view.FindViewById<TextView>(Resource.Id.element_detailsText).Text = artefact.Element;
+            view.FindViewById<TextView>(Resource.Id.setpiece_detailsCheck).Activated = artefact.setpiece;
+            view.FindViewById<TextView>(Resource.Id.description_detailsText).Text = artefact.Description;
             // Create your application here
         }
     }

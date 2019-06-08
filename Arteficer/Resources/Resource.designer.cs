@@ -2504,6 +2504,9 @@ namespace Arteficer
 			// aapt resource value: 0x7f0800ad
 			public const int descriptionText = 2131230893;
 			
+			// aapt resource value: 0x7f0800c3
+			public const int description_detailsText = 2131230915;
+			
 			// aapt resource value: 0x7f0800b6
 			public const int design_bottom_sheet = 2131230902;
 			
@@ -2518,9 +2521,6 @@ namespace Arteficer
 			
 			// aapt resource value: 0x7f0800ba
 			public const int design_navigation_view = 2131230906;
-			
-			// aapt resource value: 0x7f0800c3
-			public const int details_detailsText = 2131230915;
 			
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
