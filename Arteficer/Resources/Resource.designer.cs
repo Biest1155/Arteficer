@@ -2763,7 +2763,7 @@ namespace Arteficer
 			public const int randomButton = 2131230871;
 			
 			// aapt resource value: 0x7f0800cc
-			public const int re-artificeButton_Edit = 2131230924;
+			public const int re_artificeButton_Edit = 2131230924;
 			
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;

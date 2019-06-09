@@ -11,6 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Arteficer.Models;
+using Newtonsoft.Json;
 
 namespace Arteficer
 {
@@ -38,6 +39,16 @@ namespace Arteficer
             // Create your application here
         }
 
+        protected override void OnStart()
+        {
+            artefact = repository.Artefacts.FirstOrDefault(e => e.Id == Intent.Extras.GetInt("artefactId"));
+            FindViewById<TextView>(Resource.Id.name_detailsText).Text = artefact.Name;
+            FindViewById<TextView>(Resource.Id.type_detailsText).Text = artefact.Type;
+            FindViewById<TextView>(Resource.Id.element_detailsText).Text = artefact.Element;
+            FindViewById<TextView>(Resource.Id.description_detailsText).Text = artefact.Description;
+            base.OnStart();
+        }
+
         private void EditArtefact(object sender, EventArgs e)
         {
             Intent intent = new Intent(this, typeof(EditActivity));
@@ -47,7 +58,9 @@ namespace Arteficer
 
         private void DeleteArtefact(object sender, EventArgs e)
         {
-            
+            repository.Artefacts.Remove(artefact);
+            repository.save();
+            OnBackPressed();
         }
     }
 }

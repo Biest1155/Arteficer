@@ -72,7 +72,7 @@
 		android:text="Re-Artifice"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/re-artificeButton_Edit" />
+		android:id="@+id/re_artificeButton_Edit" />
 	<Button
 		android:text="Main Menu"
 		android:layout_width="match_parent"

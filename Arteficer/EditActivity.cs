@@ -23,13 +23,33 @@ namespace Arteficer
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.edit_layout);
 
-            artefact = repository.Artefacts.FirstOrDefault(e => e.Id == Intent.Extras.GetInt("artefactsId"));
-            FindViewById<TextView>(Resource.Id.name_detailsText).Text = artefact.Name;
-            FindViewById<TextView>(Resource.Id.type_detailsText).Text = artefact.Type;
-            FindViewById<TextView>(Resource.Id.element_detailsText).Text = artefact.Element;
-            FindViewById<TextView>(Resource.Id.description_detailsText).Text = artefact.Description;
+            Button edit = FindViewById<Button>(Resource.Id.re_artificeButton_Edit);
+            edit.Click += EditArtefact;
 
-            // Create your application here
+            Button mainMenu = FindViewById<Button>(Resource.Id.mainMenuButton_Edit);
+            mainMenu.Click += MainMenuArtefact;
+
+            artefact = repository.Artefacts.FirstOrDefault(e => e.Id == Intent.Extras.GetInt("artefactsId"));
+            FindViewById<TextView>(Resource.Id.nameEdit_Edit).Text = artefact.Name;
+            FindViewById<TextView>(Resource.Id.typeEdit_Edit).Text = artefact.Type;
+            FindViewById<TextView>(Resource.Id.elementEdit_Edit).Text = artefact.Element;
+            FindViewById<TextView>(Resource.Id.descriptionEdit_Edit).Text = artefact.Description;
+        }
+
+        private void MainMenuArtefact(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
+        }
+
+        private void EditArtefact(object sender, EventArgs e)
+        {
+            artefact.Name = FindViewById<TextView>(Resource.Id.nameEdit_Edit).Text;
+            artefact.Type = FindViewById<TextView>(Resource.Id.typeEdit_Edit).Text;
+            artefact.Element = FindViewById<TextView>(Resource.Id.elementEdit_Edit).Text;
+            artefact.Description = FindViewById<TextView>(Resource.Id.descriptionEdit_Edit).Text;
+            repository.save();
+            OnBackPressed();
         }
     }
 }
