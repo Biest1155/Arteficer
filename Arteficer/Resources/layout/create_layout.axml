@@ -64,16 +64,6 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/setpieceLayoutCreate">
-		<TextView
-			android:text="Setpiece"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:id="@+id/setpieceTextCreate" />
-		<Switch
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:id="@+id/setpieceSwitchCreate" />
 	</RelativeLayout>
 	<TextView
 		android:text="Description"

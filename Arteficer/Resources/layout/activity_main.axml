@@ -66,16 +66,6 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/setpieceLayout2">
-		<TextView
-			android:text="Setpiece"
-			android:textAppearance="?android:attr/textAppearanceMedium"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:id="@+id/setpieceText" />
-		<Switch
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:id="@+id/setpieceSwitch" />
 	</RelativeLayout>
 	<LinearLayout
 		android:minWidth="25px"

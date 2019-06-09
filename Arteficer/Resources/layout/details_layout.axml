@@ -24,16 +24,11 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/element_detailsText" />
-	<CheckBox
-		android:text="Setpiece"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:id="@+id/setpiece_detailsCheck" />
 	<TextView
 		android:text="Description"
 		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:layout_width="match_parent"
-		android:layout_height="391.5dp"
+		android:layout_height="421.0dp"
 		android:id="@+id/description_detailsText" />
 	<LinearLayout
 		android:orientation="horizontal"
@@ -41,7 +36,7 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/linearLayout1" >
+		android:id="@+id/linearLayout1">
 		<Button
 			android:text="Delete"
 			android:layout_width="184.5dp"

@@ -17,7 +17,6 @@ namespace Arteficer
         EditText name;
         EditText type;
         EditText element;
-        Switch setpiece;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -38,7 +37,6 @@ namespace Arteficer
             name = FindViewById<EditText>(Resource.Id.nameEdit);
             type = FindViewById<EditText>(Resource.Id.typeEdit);
             element = FindViewById<EditText>(Resource.Id.elementEdit);
-            setpiece = FindViewById<Switch>(Resource.Id.setpieceSwitch);
         }
 
         protected override void OnStart()

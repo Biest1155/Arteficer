@@ -21,7 +21,6 @@ namespace Arteficer
         EditText name;
         EditText type;
         EditText element;
-        Switch setpiece;
         EditText description;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,7 +35,6 @@ namespace Arteficer
             name = FindViewById<EditText>(Resource.Id.nameEditCreate);
             type = FindViewById<EditText>(Resource.Id.typeEditCreate);
             element = FindViewById<EditText>(Resource.Id.elementEditCreate);
-            setpiece = FindViewById<Switch>(Resource.Id.setpieceSwitchCreate);
             description = FindViewById<EditText>(Resource.Id.descriptionEdit);
         }
         public void Artifice_Click(object sender, EventArgs e)
@@ -44,7 +42,6 @@ namespace Arteficer
             artefact.Name = name.Text;
             artefact.Type = type.Text;
             artefact.Element = element.Text;
-            artefact.setpiece = setpiece.Activated; // its a bool. Activated = true
             artefact.Description = description.Text;
             repository.Artefacts.Add(artefact);
             repository.save();
