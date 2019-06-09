@@ -59,6 +59,7 @@
     <Compile Include="ArtefactAdapter.cs" />
     <Compile Include="CreateActivity.cs" />
     <Compile Include="DetailsActivity.cs" />
+    <Compile Include="EditActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Models\Artefact.cs" />
     <Compile Include="Models\Repository.cs" />
@@ -114,6 +115,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\details_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\edit_layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

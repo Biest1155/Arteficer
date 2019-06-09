@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
@@ -11,90 +9,73 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/nameLayout1">
+		android:id="@+id/nameLayout_Edit">
 		<TextView
 			android:text="Name"
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/nameText" />
+			android:id="@+id/nameText_Edit" />
 		<EditText
-			android:layout_margin="@dimen/abc_switch_padding"
 			android:layout_width="match_parent"
 			android:layout_height="36.0dp"
-			android:layout_toRightOf="@id/nameText"
-			android:id="@+id/nameEdit" />
+			android:layout_toRightOf="@id/nameText_Edit"
+			android:id="@+id/nameEdit_Edit" />
 	</RelativeLayout>
 	<RelativeLayout
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/pieceLayout1">
+		android:id="@+id/typeLayout_Edit">
 		<TextView
 			android:text="Type"
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/typeText" />
+			android:id="@+id/typeText_Edit" />
 		<EditText
 			android:layout_width="match_parent"
 			android:layout_height="36.0dp"
-			android:layout_toRightOf="@id/typeText"
-			android:id="@+id/typeEdit" />
+			android:layout_toRightOf="@id/typeText_Edit"
+			android:id="@+id/typeEdit_Edit" />
 	</RelativeLayout>
 	<RelativeLayout
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/elementLayout1">
+		android:id="@+id/elementLayout_Edit">
 		<TextView
 			android:text="Element"
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/elementText" />
+			android:id="@+id/elementText_Edit" />
 		<EditText
 			android:layout_width="match_parent"
 			android:layout_height="36.0dp"
-			android:layout_toRightOf="@id/elementText"
-			android:id="@+id/elementEdit" />
+			android:layout_toRightOf="@id/elementText_Edit"
+			android:id="@+id/elementEdit_Edit" />
 	</RelativeLayout>
-	<RelativeLayout
-		android:minWidth="25px"
-		android:minHeight="25px"
+	<TextView
+		android:text="Description"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/setpieceLayout2">
-	</RelativeLayout>
-	<LinearLayout
-		android:minWidth="25px"
-		android:minHeight="25px"
+		android:id="@+id/descriptionText_Edit" />
+	<EditText
+		android:inputType="textMultiLine"
 		android:layout_width="match_parent"
-		android:layout_height="40.5dp"
-		android:id="@+id/linearLayout1">
-		<Button
-			android:text="Search"
-			android:layout_width="121.5dp"
-			android:layout_height="wrap_content"
-			android:id="@+id/searchButton" />
-		<Button
-			android:text="Random"
-			android:layout_width="130.0dp"
-			android:layout_height="wrap_content"
-			android:layout_toRightOf="@id/searchButton"
-			android:id="@+id/randomButton" />
-		<Button
-			android:text="Create"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:id="@+id/createButton" />
-	</LinearLayout>
-	<ListView
-		android:minWidth="25px"
-		android:minHeight="25px"
+		android:layout_height="wrap_content"
+		android:id="@+id/descriptionEdit_Edit" />
+	<Button
+		android:text="Re-Artifice"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:id="@+id/listView1" />
+		android:layout_height="wrap_content"
+		android:id="@+id/re-artificeButton_Edit" />
+	<Button
+		android:text="Main Menu"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/mainMenuButton_Edit" />
 </LinearLayout>
