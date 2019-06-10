@@ -18,7 +18,7 @@
 			android:id="@+id/nameText_Edit" />
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="36.0dp"
+			android:layout_height="wrap_content"
 			android:layout_toRightOf="@id/nameText_Edit"
 			android:id="@+id/nameEdit_Edit" />
 	</RelativeLayout>
@@ -36,7 +36,7 @@
 			android:id="@+id/typeText_Edit" />
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="36.0dp"
+			android:layout_height="wrap_content"
 			android:layout_toRightOf="@id/typeText_Edit"
 			android:id="@+id/typeEdit_Edit" />
 	</RelativeLayout>
@@ -54,7 +54,7 @@
 			android:id="@+id/elementText_Edit" />
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="36.0dp"
+			android:layout_height="wrap_content"
 			android:layout_toRightOf="@id/elementText_Edit"
 			android:id="@+id/elementEdit_Edit" />
 	</RelativeLayout>

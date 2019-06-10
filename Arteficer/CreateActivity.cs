@@ -39,6 +39,15 @@ namespace Arteficer
         }
         public void Artifice_Click(object sender, EventArgs e)
         {
+            if (repository.Artefacts.Count() == 0)
+            {
+                artefact.Id = 0;
+            }
+            else
+            {
+                artefact.Id = repository.Artefacts.Max(m => m.Id+1);
+
+            }
             artefact.Name = name.Text;
             artefact.Type = type.Text;
             artefact.Element = element.Text;

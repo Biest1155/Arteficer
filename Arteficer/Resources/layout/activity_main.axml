@@ -21,7 +21,7 @@
 		<EditText
 			android:layout_margin="@dimen/abc_switch_padding"
 			android:layout_width="match_parent"
-			android:layout_height="36.0dp"
+			android:layout_height="wrap_content"
 			android:layout_toRightOf="@id/nameText"
 			android:id="@+id/nameEdit" />
 	</RelativeLayout>
@@ -39,7 +39,7 @@
 			android:id="@+id/typeText" />
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="36.0dp"
+			android:layout_height="wrap_content"
 			android:layout_toRightOf="@id/typeText"
 			android:id="@+id/typeEdit" />
 	</RelativeLayout>
@@ -57,16 +57,9 @@
 			android:id="@+id/elementText" />
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="36.0dp"
+			android:layout_height="wrap_content"
 			android:layout_toRightOf="@id/elementText"
 			android:id="@+id/elementEdit" />
-	</RelativeLayout>
-	<RelativeLayout
-		android:minWidth="25px"
-		android:minHeight="25px"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:id="@+id/setpieceLayout2">
 	</RelativeLayout>
 	<LinearLayout
 		android:minWidth="25px"

@@ -49,7 +49,8 @@ namespace Arteficer
             artefact.Element = FindViewById<TextView>(Resource.Id.elementEdit_Edit).Text;
             artefact.Description = FindViewById<TextView>(Resource.Id.descriptionEdit_Edit).Text;
             repository.save();
-            OnBackPressed();
+            Intent intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
         }
     }
 }
